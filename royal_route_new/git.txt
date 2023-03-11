@@ -1,6 +1,0 @@
-Important Note-> always (git pull) before (git push)
-To see which file has changes -> git status
-To add the changed files  -> git add .
-to commit changes -> git commit -m "REad me file change"
-to push -> git push origin main
-to pull means to get updated code from repo -> git pull
