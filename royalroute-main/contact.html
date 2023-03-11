@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Route</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <style>
+      .form{
+        display: flex;
+      }
+
+      h2{
+        text-shadow:4px 5px 6px rgb(196, 194, 194);
+      }
+
+      form{
+        width: 100%;
+        /* border: 2px solid black; */
+      }
+
+      input,
+      textarea {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 10%;
+        background-color: #4caf50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .map img{
+        width: 80%;
+        padding-top: 30px;
+      }
+
+
+      .footer {
+        margin-top: 50px;
+      }
+
+      @media only screen and (max-width: 768px){
+        .form{
+          flex-direction: column;
+        }
+
+        input[type="submit"]{
+          width: 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <div class="container">
+        <h1 class="logo"><a href="#">Royal Route</a></h1>
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="cities/city.html">Destination</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- END NAVIGATION -->
+
+    <!-- Hero Section -->
+    <header id="hero">
+      <!-- <img src="/assets/hero.jpg" alt="This is Hero Image" /> -->
+      <h1>Royal Route Tourism</h1>
+    </header>
+    <!-- END HERO -->
+    <!-- Contact Section -->
+    <main class="contact">
+      <h2>CONTACT US</h2>
+      <br>
+      <div class="form">
+        <form action="">
+          <label for="fname">Name:</label><br>
+          <input type="text" id="fname" name="fname" placeholder="Name" /><br />
+          <label for="email">Email:</label><br>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+          /><br />
+          <label for="phone">Contact:</label><br>
+          <input type="text" name="phone" placeholder="Contact Number" /><br />
+          <label for="feedback">Message:</label><br>
+          <textarea
+            name="message"
+            id="feedback"
+            cols="25"
+            rows="5"
+            placeholder="Please write your query..."
+            ></textarea>
+          <br><br />
+          <input type="submit" value="Send" /><br></br>
+        </form>
+        <div class="map">
+          <a href="https://www.google.com/maps/place/Oberweg,+3013+Bern,+Switzerland/@46.9516738,7.4495428,16.75z/data=!4m5!3m4!1s0x478e39c203c69b2d:0x2bc6cf7b1f4c3d1e!8m2!3d46.9522348!4d7.4494077"
+           target="_blank"><img src="assets/location.jpg" alt=""></a>
+          <h2>Royal Route Tourism Contact Information </h2>
+          <p>Address: 3013 Oberweg, Bern, Switzerland.</p>
+          <p>Phone: +41 55 655 62 43</p>
+          <p>E-mail: royalroute@gmail.com</p>
+          <p>Working hour: 24/7 Support.</p>
+        </div>
+      </div>
+    </main>
+    <!--END Contact-->
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="foo-link">
+        <a href="wireframe/SITE MAP.jpg" target="_blank">Sitemap</a>
+        <a href="review.html">Reviews</a>
+        <a href="cities/city.html">Explore</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <h3>Copyright &copy; Royal Route</h3>
+    </footer>
+    <!-- END FOOTER -->
+  </body>
+</html>
